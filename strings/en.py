@@ -4,16 +4,16 @@
 # Part of the translation by https://github.com/DarrenWestwood
 
 # Currency symbol
-currency_symbol = "€"
+currency_symbol = "R$"
 
 # Positioning of the currency symbol
 currency_format_string = "{symbol} {value}"
 
 # Quantity of a product in stock
-in_stock_format_string = "{quantity} available"
+in_stock_format_string = "{quantity} disponivel"
 
 # Copies of a product in cart
-in_cart_format_string = "{quantity} in cart"
+in_cart_format_string = "{quantity} na sacola"
 
 # Product information
 product_format_string = "<b>{name}</b>\n" \
@@ -22,30 +22,30 @@ product_format_string = "<b>{name}</b>\n" \
                         "<b>{cart}</b>"
 
 # Order number, displayed in the order info
-order_number = "Order #{id}"
+order_number = "Pedido #{id}"
 
 # Order info string, shown to the admins
-order_format_string = "by {user}\n" \
-                      "Created on {date}\n" \
+order_format_string = "Usuario: {user}\n" \
+                      "Data pedido: {date}\n" \
                       "\n" \
                       "{items}\n" \
-                      "TOTAL: <b>{value}</b>\n" \
+                      "Valor total: <b>{value}</b>\n" \
                       "\n" \
-                      "Customer notes: {notes}\n"
+                      "BIN: {notes}\n"
 
 # Order info string, shown to the user
-user_order_format_string = "{status_emoji} <b>Order {status_text}</b>\n" \
+user_order_format_string = "{status_emoji} <b>Pedido {status_text}</b>\n" \
                            "{items}\n" \
-                           "TOTAL: <b>{value}</b>\n" \
+                           "Valor total: <b>{value}</b>\n" \
                            "\n" \
-                           "Notes: {notes}\n"
+                           "BIN: {notes}\n"
 
 # Transaction page is loading
-loading_transactions = "<i>Loading transactions...\n" \
-                       "Please wait a few seconds.</i>"
+loading_transactions = "<i>Carregando transações...\n" \
+                       "Espere alguns segundos.</i>"
 
 # Transactions page
-transactions_page = "Page <b>{page}</b>:\n" \
+transactions_page = "Pagina <b>{page}</b>:\n" \
                     "\n" \
                     "{transactions}"
 
@@ -55,149 +55,138 @@ csv_caption = "A 📄 .csv file containing all transactions stored in the bot da
               " the data."
 
 # Conversation: the start command was sent and the bot should welcome the user
-conversation_after_start = "Hello!\n" \
-                           "Welcome to greed!\n" \
-                           "This is the 🅱️ <b>Beta</b> version of the software.\n" \
-                           "It is fully usable, but there may be some bugs are still present.\n" \
-                           "If you find any, please report them at https://github.com/Steffo99/greed/issues."
+conversation_after_start = "Seja bem-vindo a Lean Store!\n" \
+                           "Material de qualidade!\n" \
+                           "Leia ATENTAMENTE as INFORMAÇÕES antes de comprar!"
 
+# Conversation: the start command was sent and the bot should welcome the user
+conversation_after_start = " 🥤 Seja bem-vindo á Lean Store 🥤 \n" \
+                           " 🚀 Material de qualidade 🚀 "
+                           
 # Conversation: to send an inline keyboard you need to send a message with it
-conversation_open_user_menu = "What would you like to do?\n" \
-                              "💰 You have <b>{credit}</b> in your wallet.\n" \
+conversation_open_user_menu = "O que deseja fazer?\n" \
+                              "Você tem 💰<b>{credit}</b> de saldo.\n" \
                               "\n" \
-                              "<i>Press a key on the bottom keyboard to select an operation.\n" \
-                              "If the keyboard has not opened, you can open it by pressing the button with four small" \
-                              " squares in the message bar.</i>"
+                              "Para adicionar saldo e comprar CC's use o menu abaixo." 
+
 
 # Conversation: like above, but for administrators
-conversation_open_admin_menu = "You are a 💼 <b>Manager</b> of this store!\n" \
-                               "What would you like to do?\n" \
-                               "\n" \
-                               "<i>Press a key on the bottom keyboard to select an operation.\n" \
-                               "If the keyboard has not opened, you can open it by pressing the button with four small" \
-                               " squares in the message bar.</i>"
+conversation_open_admin_menu = "Você é o 💼 <b>Gerente</b> dessa loja!\n" \
+                               "O que quer fazer?" 
 
 # Conversation: select a payment method
-conversation_payment_method = "How do you want to add funds to your wallet?"
+conversation_payment_method = "Qual método de pagamento deseja?"
 
 # Conversation: select a product to edit
-conversation_admin_select_product = "✏️ What product do you want to edit?"
+conversation_admin_select_product = "✏️ Qual produto você quer editar?"
 
 # Conversation: select a product to delete
-conversation_admin_select_product_to_delete = "❌ What product do you want to delete?"
+conversation_admin_select_product_to_delete = "❌ Qual produto gostaria de deletar?"
 
 # Conversation: select a user to edit
-conversation_admin_select_user = "Select an user to edit."
+conversation_admin_select_user = "Selecione um usuário"
 
 # Conversation: click below to pay for the purchase
-conversation_cart_actions = "<i>Add products to cart by scrolling up and pressing the Add button below" \
-                            " the products you want to add to the cart. When you're done, go back to this message and" \
-                            " press the Done button below.</i>"
+conversation_cart_actions = ""
 
 # Conversation: confirm the cart contents
-conversation_confirm_cart = "🛒 Your cart contains the following products:\n" \
+conversation_confirm_cart = "🛒 Produtos do seu carrinho:\n" \
+                            "\n" \
                             "{product_list}" \
                             "Total: <b>{total_cost}</b>\n" \
                             "\n" \
-                            "<i>If you want to proceed, press the Done button below this message.\n" \
-                            "To cancel, press the Cancel button.</i>"
-
+                            "Confirme sua compra!" 
+                         
 # Conversation: the user activated the live orders mode
-conversation_live_orders_start = "You are in <b>Live Orders</b> mode\n" \
-                                 "All new orders placed by customers will appear in real time in this chat, and you" \
-                                 " will be able to mark them as ✅ Completed" \
-                                 " or ✴️ Refund the credit to the customer.\n" \
-                                 "\n" \
-                                 "<i>Press the Stop button below this message to stop the" \
-                                 " feed.</i>"
+conversation_live_orders_start = "Pedidos em tempo real"
+                                
 
 # Conversation: help menu has been opened
 conversation_open_help_menu = "What kind of help do you need?"
 
 # Conversation: confirm promotion to admin
-conversation_confirm_admin_promotion = "Are you sure you want to promote this user to 💼 Manager?\n" \
-                                       "It is an irreversible action!"
+conversation_confirm_admin_promotion = "Tem certeza que deseja transformar esse usuário em 💼 ADMIN?\n" \
+                                       "Essa ação é irreversível!"
 
 # Conversation: language select menu header
-conversation_language_select = "Select a language:"
+conversation_language_select = "Escolha uma linguagem"
 
 # Conversation: switching to user mode
-conversation_switch_to_user_mode = " You are switching to 👤 Customer mode.\n" \
-                                   "If you want to go back to the 💼 Manager menu, restart the conversation with /start."
+conversation_switch_to_user_mode = " Ir para o modo 👤 Cliente.\n" \
+                                   "Se quiser voltar para o menu de gerente digete /start"
 
 # Notification: the conversation has expired
-conversation_expired = "🕐  I haven't received any messages in a while, so I closed the conversation to save" \
-                       " resources.\n" \
-                       "If you want to start a new one, send a new /start command."
+conversation_expired = "🕐  Faz tempo que não conversamos...bora comprar uma CC?\n" \
+                       "Primeiro me atualize digitando /start "
 
 # User menu: order
-menu_order = "🛒 Orders"
+menu_order = "🛒 Comprar CC's"
 
 # User menu: order status
-menu_order_status = "🛍 My orders"
+menu_order_status = "🛍 Meus pedidos"
 
 # User menu: add credit
-menu_add_credit = "💵 Add funds"
+menu_add_credit = "💵 Adicionar saldo"
 
 # User menu: bot info
-menu_bot_info = "ℹ️ Bot info"
+menu_bot_info = "ℹ️ Informações"
 
 # User menu: cash
-menu_cash = "💵 With cash"
+menu_cash = "💵 Pix"
 
 # User menu: credit card
-menu_credit_card = "💳 By credit card"
+menu_credit_card = "💳 Cartão"
 
 # Admin menu: products
-menu_products = "📝️ Products"
+menu_products = "📝️ Produtos"
 
 # Admin menu: orders
-menu_orders = "📦 Orders"
+menu_orders = "📦 Pedidos"
 
 # Menu: transactions
-menu_transactions = "💳 Transaction list"
+menu_transactions = "💳 Lista de transações"
 
 # Menu: edit credit
-menu_edit_credit = "💰 Create transaction"
+menu_edit_credit = "💰 Criar transação"
 
 # Admin menu: go to user mode
-menu_user_mode = "👤 Switch to customer mode"
+menu_user_mode = "👤 Mudar para cliente"
 
 # Admin menu: add product
-menu_add_product = "✨ New product"
+menu_add_product = "✨ Novo produto"
 
 # Admin menu: delete product
-menu_delete_product = "❌ Delete product"
+menu_delete_product = "❌ Deletar produto"
 
 # Menu: cancel
 menu_cancel = "🔙 Cancel"
 
 # Menu: skip
-menu_skip = "⏭ Skip"
+menu_skip = "⏭ Pular"
 
 # Menu: done
-menu_done = "✅️ Done"
+menu_done = "✅️ Confirmar"
 
 # Menu: pay invoice
 menu_pay = "💳 Pay"
 
 # Menu: complete
-menu_complete = "✅ Complete"
+menu_complete = "✅ Finalizado"
 
 # Menu: refund
-menu_refund = "✴️ Refund"
+menu_refund = "✴️ Reembolso"
 
 # Menu: stop
 menu_stop = "🛑 Stop"
 
 # Menu: add to cart
-menu_add_to_cart = "➕ Add"
+menu_add_to_cart = "➕ Adicionar"
 
 # Menu: remove from cart
-menu_remove_from_cart = "➖ Remove"
+menu_remove_from_cart = "➖ Remover"
 
 # Menu: help menu
-menu_help = "❓ Help / Support"
+menu_help = ""
 
 # Menu: guide
 menu_guide = "📖 Guide"
@@ -218,7 +207,7 @@ menu_csv = "📄 .csv"
 menu_edit_admins = "🏵 Edit Managers"
 
 # Menu: language
-menu_language = "🇬🇧 Language"
+menu_language = ""
 
 # Emoji: unprocessed order
 emoji_not_processed = "*️⃣"
@@ -260,27 +249,28 @@ ask_product_image = "🖼 What image do you want the product to have?\n" \
                     "<i>Send the photo, or Skip this phase and don't add any image.</i>"
 
 # Order product: notes?
-ask_order_notes = "Would you like to leave a note along with the order?\n" \
-                  "💼 It will be visible to the store Managers.\n" \
+ask_order_notes = "💳 Gostaria de escolher a BIN? *opcional\n" \
                   "\n" \
-                  "<i>Send a message with the note you want to leave, or press the Skip button below this" \
-                  " message to leave nothing.</i>"
+                  "✅ Caso queira escolher a BIN, digite abaixo.\n" \
+                  "✅ Caso queira uma BIN aleatória, deixe em branco.\n" \
+                  "\n" \
+                  "<i>Se for mais que uma CC, digite as BINS seguidas de virgula.\n" \
+                  "Exemplo: 438935, 504175, 636368, ETC... .</i>"
 
 # Refund product: reason?
-ask_refund_reason = " Attach a reason to this refund.\n" \
-                    "👤  It will be visible to the customer."
+ask_refund_reason = " Digite o motivo do reembolso.\n" \
+                    "👤 OBS: Aparecerá para o cliente."
 
 # Edit credit: notes?
-ask_transaction_notes = " Attach a note to this transaction.\n" \
-                        "👤 It will be visible to the customer after crediting / debiting" \
-                        " and to 💼 Admins in the transaction log."
+ask_transaction_notes = " Escreva a forma de pagamento que o cliente fez.\n" \
+                        " Exemplo: Pix"
 
 # Edit credit: amount?
-ask_credit = "How do you want to change the customer's credit?\n" \
+ask_credit = "Quanto de saldo você gostária de adicionar?\n" \
              "\n" \
-             "<i>Send a message containing the amount.\n" \
-             "Use the sign </i><code>+</code><i> to add credit to the customer's account," \
-             " and the sign </i><code>-</code><i> to deduce it.</i>"
+             "<i>Escreva abaixo:\n" \
+             "Use o sinal </i><code>+</code><i> para adicionar saldo," \
+             " e o sinal </i><code>-</code><i> para reduzir saldo (pouco usado).</i>"
 
 # Header for the edit admin message
 admin_properties = "<b>Permissions of {name}:</b>"
@@ -309,8 +299,10 @@ edit_current_value = "The current value is:\n" \
                      "<i>Press the Skip button below this message to keep the same value.</i>"
 
 # Payment: cash payment info
-payment_cash = "You can pay in cash at the physical location of the store.\n" \
-               "Pay at checkout, and give this id to the manager:\n" \
+payment_cash = "Para adicionar saldo a sua carteira envie um Pix para:.\n" \
+               "2a408081-569f-4c97-b21d-a03a9072e9e4\n" \
+               "Nome: Daniel - Banco: Inter\n" \
+               "Após pagar, envie o comprovante e o número abaixo para @hazer171 ou @kingston171\n" \
                "<b>{user_cash_id}</b>"
 
 # Payment: invoice amount
@@ -319,7 +311,7 @@ payment_cc_amount = "How many funds do you want to add to your wallet?\n" \
                     "<i>Select an amount with the buttons below, or enter it manually with the normal keyboard</i>"
 
 # Payment: add funds invoice title
-payment_invoice_title = "Adding funds"
+payment_invoice_title = "Adicionar saldo"
 
 # Payment: add funds invoice description
 payment_invoice_description = "Paying this invoice will add {amount} to your wallet."
@@ -335,11 +327,11 @@ notification_order_placed = "A new order was placed:\n" \
                             "{order}"
 
 # Notification: order has been completed
-notification_order_completed = "Your order has been completed!\n" \
+notification_order_completed = "Sua compra foi fechada!\n" \
                                "{order}"
 
 # Notification: order has been refunded
-notification_order_refunded = "Your order has been refunded!\n" \
+notification_order_refunded = "Sua compra foi reembolsada!\n" \
                               "{order}"
 
 # Notification: a manual transaction was applied
@@ -405,7 +397,7 @@ error_invoice_expired = "⚠️ This invoice has expired and was canceled. If yo
                         " funds menu option."
 
 # Error: a product with that name already exists
-error_duplicate_name = "️⚠️ A product with the same name already exists."
+error_duplicate_name = "️⚠️ Já existe um produto com esse nome."
 
 # Error: not enough credit to order
 error_not_enough_credit = "⚠️ You do not have enough credit to place the order."
